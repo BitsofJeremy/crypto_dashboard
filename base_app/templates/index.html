@@ -1,0 +1,46 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+  <h1>INDEX PAGE</h1>
+  <p class="lead">content</p>
+</div>
+    {% for wallet in wallets %}
+    <div class="box">
+        <h2>Wallet</h2>
+        <h3>{{ wallet.wallet_address }}</h3>
+        <ul>
+            <li><h4>
+                Wallet: {{ wallet.wallet }}
+            </h4></li>
+            <li><h4>
+                Token: {{ wallet.token }}
+            </h4></li>
+            <li><h4>
+                Network: {{ wallet.network }}
+            </h4></li>
+            <li><h4>
+                current_price: {{ wallet.current_price }}
+            </h4></li>
+            <li><h4>
+                base_stake: {{ wallet.base_stake }}
+            </h4></li>
+            <li><h4>
+                current_stake: {{ wallet.current_stake }}
+            </h4></li>
+            <li><h4>
+                current_awards: {{ wallet.current_awards }}
+            </h4></li>
+            <li><h4>
+                current_stake_value: {{ wallet.current_stake_value }}
+            </h4></li>
+            <li><h4>
+                current_awards_value: {{ wallet.current_awards_value }}
+            </h4></li>
+        </ul>
+    </div>
+    {% endfor %}
+
+{% endblock %}
