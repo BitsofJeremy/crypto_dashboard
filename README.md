@@ -18,7 +18,7 @@ https://github.com/e1ven/Robohash
 
 # Install
 
-    git clone https://gitlab.com/deafmice/crypto_dashboard.git
+    git clone https://github.com/ephergent/crypto_dashboard.git
     cd crypto_dashboard
     virtualenv -p python3 venv
     source venv/bin/activate
